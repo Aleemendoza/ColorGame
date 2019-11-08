@@ -1,0 +1,29 @@
+.square {
+
+    float: left;
+    width: 30%;
+    height: 0;
+    padding-bottom: 30%;
+    background-color: #292929;
+    margin: 1.66%;
+
+
+}
+.container {
+
+    max-width: 600px;
+    margin: 0 auto;
+    align-content: center;
+}
+body {
+
+        background-color: gray;
+
+}
+h1  {
+
+    text-align: center;
+    background:#222332;
+    color:white;
+
+}
