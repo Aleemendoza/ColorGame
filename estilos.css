@@ -27,3 +27,9 @@ h1  {
     color:white;
 
 }
+#message {
+
+display: inline-block;
+width: 20%;
+left: 50%;
+}

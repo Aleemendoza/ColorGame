@@ -11,6 +11,18 @@ pickedColor.innerHTML=colors[4]
 
 
 // funcion para comparar el color clickeado con el del elemento del dom.
+
+function changeColors (color){
+
+for( i = 0 ;i < colors.length ; i++) {
+    
+        cuadrados[i].style.backgroundColor=color    
+
+}    
+
+
+}
+
 function elegirCuadrados() {
     for (i = 0; i<colors.length;i++){
         
@@ -18,10 +30,11 @@ function elegirCuadrados() {
         cuadrados[i].addEventListener("click",function(){
             var colorClickeado = this.style.backgroundColor;
             
-           if (colorClickeado != pickedColor.innerHTML){
-            
-            this.style.background="gray"
-            pickedColor
+            if (colorClickeado != pickedColor.innerHTML){
+                
+                this.style.background="gray";
+                var message = document.getElementById("message");
+                message.innerHTML="try again!";
 
            }
             else {  
@@ -30,6 +43,7 @@ function elegirCuadrados() {
                 console.log(h1)
                 message.innerHTML="Correct!";
                 h1.style.backgroundColor=colorClickeado;
+                changeColors(pickedColor);
             }
         })   
             cuadrados[i].style.backgroundColor=colors[i];
@@ -38,7 +52,6 @@ function elegirCuadrados() {
 } 
 elegirCuadrados();
 
-// funcion para que se vayan todos a la mierda
 
 
 
