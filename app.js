@@ -10,17 +10,17 @@ pickedColor.innerHTML=colors[4]
 
 
 
-// funcion para comparar el color clickeado con el del elemento del dom.
 
 function changeColors (color){
-
-for( i = 0 ;i < colors.length ; i++) {
     
+    for( i = 0 ;i < colors.length ; i++) {
+        
         cuadrados[i].style.backgroundColor=color    
-
-}    
-
-
+        
+    }    
+    
+    // funcion para comparar el color clickeado con el del elemento del dom.
+    
 }
 
 function elegirCuadrados() {
