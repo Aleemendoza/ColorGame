@@ -35,12 +35,11 @@ function elegirCuadrados() {
                 this.style.background="gray";
                 var message = document.getElementById("message");
                 message.innerHTML="try again!";
-
+                console.log(colorClickeado)
            }
             else {  
                 var message = document.getElementById("message");
                 var h1 = document.querySelector("h1");
-                console.log(h1)
                 message.innerHTML="Correct!";
                 h1.style.backgroundColor=colorClickeado;
                 changeColors(pickedColor);
@@ -53,5 +52,32 @@ function elegirCuadrados() {
 elegirCuadrados();
 
 
+//  función para asignarle a pickedColor un color random
+
+function pickColor() {
 
 
+    var numeroRamdom = Math.floor( Math.random() * colors.length );
+    console.log(numeroRamdom);
+    return colors[numeroRamdom];
+}
+
+function generarNumeroRamdom (num){
+
+    var numGenerado = [];
+    for (i = 0; i < num; i++){
+        numGenerado[i] = colorRamdom();
+    }
+    console.log(numGenerado)
+    return generarNumeroRamdom;
+
+}
+pickColor();
+generarNumeroRamdom()
+
+function colorRamdom(){
+
+    var r = math.floor(math.random() * 256);
+    var g = math.floor(math.random() * 256);
+    var b = math.floor(math.random() * 256);
+}
