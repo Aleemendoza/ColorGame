@@ -1,4 +1,4 @@
-const cuadrados = document.getElementsByClassName("square");
+var cuadrados = document.getElementsByClassName("square");
 
 var pickedColor = document.getElementById("colorDisplay");
 
@@ -35,7 +35,6 @@ function elegirCuadrados() {
                 this.style.background="gray";
                 var message = document.getElementById("message");
                 message.innerHTML="try again!";
-                console.log(colorClickeado)
            }
             else {  
                 var message = document.getElementById("message");
@@ -58,7 +57,6 @@ function pickColor() {
 
 
     var numeroRamdom = Math.floor( Math.random() * colors.length );
-    console.log(numeroRamdom);
     return colors[numeroRamdom];
 }
 
@@ -68,7 +66,6 @@ function generarNumeroRamdom (num){
     for (i = 0; i < num; i++){
         numGenerado[i] = colorRamdom();
     }
-    console.log(numGenerado)
     return generarNumeroRamdom;
 
 }
