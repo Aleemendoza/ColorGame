@@ -70,11 +70,4 @@ function generarNumeroRamdom (num){
 
 }
 pickColor();
-generarNumeroRamdom()
-
-function colorRamdom(){
-
-    var r = math.floor(math.random() * 256);
-    var g = math.floor(math.random() * 256);
-    var b = math.floor(math.random() * 256);
-}
+generarNumeroRamdom(colors)
